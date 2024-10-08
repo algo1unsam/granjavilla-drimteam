@@ -1,6 +1,6 @@
 import wollok.game.*
 
-import granjaVilla.*
+import GranjaVilla.*
 
 program GranjaVilla {
 	game.title("granja")
