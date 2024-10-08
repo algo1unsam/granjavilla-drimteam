@@ -1,9 +1,9 @@
 import wollok.game.*
 
-import example.pepita
+import granjaVilla.*
 
-program PepitaGame {
-	game.title("Pepita")
+program GranjaVilla {
+	game.title("granja")
 	game.height(10)
 	game.width(10)
 
@@ -12,7 +12,7 @@ program PepitaGame {
 
 	//
 
-	game.showAttributes(pepita) //Debug
+	//game.showAttributes(pepita) //Debug
 
 	game.start()
 }
