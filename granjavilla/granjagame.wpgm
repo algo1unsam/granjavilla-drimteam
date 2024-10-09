@@ -1,0 +1,15 @@
+import wollok.game.*
+import sembrar.*
+import cosecha.*
+import GranjaVilla.*
+import regar.*
+program GranjaVilla {
+	game.title("granja")
+	game.height(10)
+	game.width(10)
+  	game.boardGround("ground.png")
+	game.showAttributes(player) //Debug
+
+	gamegranja.iniciar()
+	game.start()
+}
