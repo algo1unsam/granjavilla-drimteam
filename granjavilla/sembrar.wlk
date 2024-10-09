@@ -1,11 +1,5 @@
 import wollok.game.*
-object player{
 
-  method image()="player.png"
-
-  method position() = game.at(0,0)
-    
-}
 object maiz{
   method image()="corn_baby.png"
 

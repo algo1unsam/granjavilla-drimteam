@@ -3,6 +3,7 @@ import sembrar.*
 import cosecha.*
 import GranjaVilla.*
 import regar.*
+import hector.*
 program GranjaVilla {
 	game.title("granja")
 	game.height(10)
