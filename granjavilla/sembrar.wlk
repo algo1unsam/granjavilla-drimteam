@@ -1,34 +1,26 @@
 import wollok.game.*
 import hector.*
 
-object maiz{
-  
+class Vegetales{
   var property position = game.origin()
-  method image()="corn_baby.png"
-
-  
-  method sembrado(posicion) { position  = posicion}
-
-  method position() = position
-}
-object trigo{
-  method image()="wheat_0.png"
-
-   var property position = game.origin()
 
    method sembrado(posicion) { position  = posicion}
 
   method position() = position
+  
+}
+object maiz inherits Vegetales{
+  
+  method image()="corn_baby.png"
 
 }
-object tomaco{
-  var property position = game.origin()
+object trigo inherits Vegetales{
+  method image()="wheat_0.png"
 
+}
+object tomaco inherits Vegetales{
+ 
   method image()="tomaco.png"
 
-  method sembrado(posicion) { position  = posicion}
-
-  method position() = position
- 
 
 }
