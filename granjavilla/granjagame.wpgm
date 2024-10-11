@@ -9,7 +9,7 @@ program GranjaVilla {
 	game.height(10)
 	game.width(10)
   	game.boardGround("ground.png")
-	game.showAttributes(player) //Debug
+	game.showAttributes(hector) //Debug
 
 	gamegranja.iniciar()
 	game.start()

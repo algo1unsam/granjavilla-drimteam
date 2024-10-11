@@ -12,7 +12,7 @@ object gamegranja{
         game.addVisual(maiz)
         game.addVisual(trigo)
         game.addVisual(tomaco)
-        game.addVisualCharacter(player)
+        game.addVisualCharacter(hector)
         config.teclas()
     }
 }
@@ -20,9 +20,14 @@ object gamegranja{
 
 object config {
   method teclas() {
-    keyboard.left().onPressDo({player.irA(player.position().left(1))})
-    keyboard.right().onPressDo({player.irA(player.position().right(1))})
-    keyboard.up().onPressDo({player.irA(player.position().up(1))})
-     keyboard.down().onPressDo({player.irA(player.position().down(1))})
+    keyboard.left().onPressDo({hector.irA(hector.position().left(1))})
+    keyboard.right().onPressDo({hector.irA(hector.position().right(1))})
+    keyboard.up().onPressDo({hector.irA(hector.position().up(1))})
+    keyboard.down().onPressDo({hector.irA(hector.position().down(1))})
+    keyboard.m().onPressDo({ hector.sembrar(maiz)})
+    keyboard.t().onPressDo({ hector.sembrar(trigo)})
+    keyboard.o().onPressDo({ hector.sembrar(tomaco)})
+
+
 }
 }

@@ -1,21 +1,34 @@
 import wollok.game.*
+import hector.*
 
 object maiz{
+  
+  var property position = game.origin()
   method image()="corn_baby.png"
 
-  method position() = game.at(1,1)
+  
+  method sembrado(posicion) { position  = posicion}
 
+  method position() = position
 }
 object trigo{
   method image()="wheat_0.png"
 
-  method position() = game.at(2,2)
+   var property position = game.origin()
+
+   method sembrado(posicion) { position  = posicion}
+
+  method position() = position
 
 }
 object tomaco{
+  var property position = game.origin()
 
   method image()="tomaco.png"
 
-  method position() = game.at(3,3)
+  method sembrado(posicion) { position  = posicion}
+
+  method position() = position
+ 
 
 }
